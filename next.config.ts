@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   experimental: {
     externalDir: true,
   },
+  transpilePackages: ['shared'],
   async rewrites() {
     return {
       beforeFiles: [
