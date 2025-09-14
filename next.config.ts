@@ -5,7 +5,6 @@ const { NEXT_PUBLIC_HOME_URL } = process.env;
 
 const nextConfig: NextConfig = {
   assetPrefix: '/',
-  basePath: '/',
   experimental: {
     externalDir: true,
   },
