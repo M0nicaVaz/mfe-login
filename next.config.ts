@@ -29,10 +29,6 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
-          source: '/:path*',
-          destination: `/:path*`,
-        },
-        {
           source: '/home',
           destination: `${NEXT_PUBLIC_HOME_URL}/home`,
         },
