@@ -1,0 +1,52 @@
+@use "../../../../shared/styles/index.scss" as *;
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include mobile-only {
+    flex-direction: column;
+  }
+
+  @include tablet-portrait {
+    padding: $padding-none $padding-md;
+  }
+
+  .container {
+    width: 20rem;
+
+    @include mobile-only {
+      padding: $padding-lg $padding-lg $padding-none $padding-lg;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .title {
+      font-size: $heading;
+      margin-bottom: $margin-lg;
+
+      @include mobile-only {
+        font-size: $title-sm;
+        margin-bottom: $margin-md;
+      }
+
+      @include tablet-portrait {
+        font-size: $title-md;
+      }
+    }
+
+    .text {
+      font-size: $title-sm;
+      @include mobile-only {
+        font-size: $body-lg;
+      }
+
+      @include tablet-portrait {
+        font-size: $body-lg;
+      }
+    }
+  }
+}
