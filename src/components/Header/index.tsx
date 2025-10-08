@@ -3,7 +3,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { Button, IconButton } from "shared";
-import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header() {
@@ -31,9 +30,9 @@ export default function Header() {
       </div>
       <div className={styles.buttons}>
         <Button label="Abrir conta" />
-        <Link href={"/home"} className={styles.linkButton}>
+        <a href="/home" className={styles.linkButton}>
           <span className={styles.secondaryButton}>Já tenho conta</span>
-        </Link>
+        </a>
       </div>
     </header>
   );
