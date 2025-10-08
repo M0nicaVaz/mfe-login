@@ -74,6 +74,43 @@
     }
   }
 
+  .linkButton {
+    text-decoration: none;
+  }
+
+  .secondaryButton {
+    display: inline-block;
+    border: none;
+    height: $size-40;
+    padding: 0 $padding-md;
+    border-radius: $radius-full;
+    font-size: $body-md;
+    font-weight: $font-weight-semibold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: $color-brand-400;
+    border: $border-width-md solid $color-brand-400;
+
+    &:hover {
+      border-color: $color-brand-500;
+      color: $color-brand-500;
+    }
+
+    &:active {
+      border-color: $color-primary-accent-200;
+      color: $color-primary-accent-200;
+    }
+
+    @include tablet-portrait {
+      height: $size-32;
+      font-size: $body-sm;
+      font-weight: $font-weight-regular;
+    }
+  }
+
   .menuIcon {
     display: none;
     @include mobile-only {

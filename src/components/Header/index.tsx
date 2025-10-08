@@ -31,8 +31,8 @@ export default function Header() {
       </div>
       <div className={styles.buttons}>
         <Button label="Abrir conta" />
-        <Link href={"/home"}>
-          <Button label="Já tenho conta" priority="secondary" />
+        <Link href={"/home"} className={styles.linkButton}>
+          <span className={styles.secondaryButton}>Já tenho conta</span>
         </Link>
       </div>
     </header>
