@@ -12,7 +12,9 @@ export default function Header() {
         <IconButton icon={<MenuIcon />} priority="tertiary" />
       </div>
       <div className={styles.leftContainer}>
-        <p className={styles.logo}>bytebank</p>
+        <p className={styles.logo} tabIndex={0} aria-label="Bytebank logo">
+          bytebank
+        </p>
         <nav className={styles.nav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
@@ -30,8 +32,8 @@ export default function Header() {
       </div>
       <div className={styles.buttons}>
         <Button label="Abrir conta" />
-        <a href="/home" className={styles.linkButton}>
-          <span className={styles.secondaryButton}>Já tenho conta</span>
+        <a href="/home" className={styles.linkButton} role="button">
+          <Button label="Já tenho conta" priority="secondary" />
         </a>
       </div>
     </header>

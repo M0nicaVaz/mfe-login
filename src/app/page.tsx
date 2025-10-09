@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 export default function Login() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} tabIndex={0}>
       <Header />
       <MainContent />
       <BenefitsList />
