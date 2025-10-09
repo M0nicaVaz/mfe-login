@@ -14,9 +14,15 @@ export default function BenefitsItem({
 }: BenefitsItemProps) {
   return (
     <div className={styles.benefitsItem}>
-      <div className={styles.icon}>{icon}</div>
-      <p className={styles.title}>{title}</p>
-      <p className={styles.description}>{description}</p>
+      <div aria-hidden className={styles.icon}>
+        {icon}
+      </div>
+      <p tabIndex={0} className={styles.title}>
+        {title}
+      </p>
+      <p tabIndex={0} className={styles.description}>
+        {description}
+      </p>
     </div>
   );
 }
