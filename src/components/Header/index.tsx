@@ -31,8 +31,10 @@ export default function Header() {
         </nav>
       </div>
       <div className={styles.buttons}>
-        <Button label="Abrir conta" />
-        <a href="/home" className={styles.linkButton} role="button">
+        <a href="/home/register" className={styles.linkButton} role="button">
+          <Button label="Abrir conta" />
+        </a>
+        <a href="/home/login" className={styles.linkButton} role="button">
           <Button label="Já tenho conta" priority="secondary" />
         </a>
       </div>
